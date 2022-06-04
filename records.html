@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="records.css">
+</head>
+<body>
+   
+<h1 class="text-center text-light">
+  Employee Management System</h1>
+  <div class="d-flex justify-content-center p-2" style="background-color: #f93adf;">
+          <div class="bg-light p-5">
+              <form autocomplete="off" onsubmit="onFormSubmit()" class="form-group">
+                      <div>
+                          <label for="fullName"><h1>Full Name</h1></label>
+                          <input type="text" name="fullName" id="fullName" class="form-control" >
+                      </div>
+  <div>
+                          <label for="empCode"><h1>EMP Code</h1></label>
+                          <input type="text" name="empCode" id="empCode" class="form-control">
+                      </div>
+  <div>
+                          <label for="salary"><h1>Salary</h1></label>
+                          <input type="number" name="salary" id="salary" class="form-control">
+                      </div>
+  <div>
+                          <label for="city"><h1>City</h1></label><br>
+                          <input type="text" name="city" id="city" class="form-control">
+                      </div>
+  <div class="form_action--button">
+                          <input type="submit" value="Submit" class="btn btn-success ">
+                          <input type="reset" value="Reset" class="btn btn-warning">
+                      </div>
+  </form>
+  </div>
+  <div class="bg-primary p-2">
+               <table class="list" id="employeeList">
+                      <thead>
+  <tr>
+                              <th>Full Name</th>
+                              <th>EMP Code</th>
+                              <th>Salary</th>
+                              <th>City</th>
+                              <th></th>
+                          </tr>
+  </thead>
+                      <tbody class="text-light">
+  
+                      </tbody>
+                  </table>
+  </div>
+  </div>
+  <script src="records.js"></script>
+  
+</body>
+</html>
